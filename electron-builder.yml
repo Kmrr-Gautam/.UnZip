@@ -1,0 +1,30 @@
+appId: com.dotunzip.desktop
+productName: .UnZip
+copyright: Copyright © 2026 .UnZip
+directories:
+  output: release
+  buildResources: resources
+files:
+  - dist/**/*
+  - package.json
+extraResources:
+  - from: resources/7z
+    to: resources/7z
+asarUnpack:
+  - "**/node_modules/7zip-bin/**/*"
+win:
+  signAndEditExecutable: false
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: portable
+      arch:
+        - x64
+  icon: resources/icon.ico
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: .UnZip

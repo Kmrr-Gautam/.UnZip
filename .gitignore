@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build and Packaging outputs
+dist/
+release/
+*.blockmap
+builder-debug.yml
+builder-effective-config.yaml
+DotUnZip_Source_Deliverable.zip
+
+# Logs and databases
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.sqlite
+*.sqlite-journal
+*.db
+
+# Temporary test folders
+unzip_test_*
+unzip_verify_*
+unzip_e2e_*
+unzip_db_*
+test_src/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+*.local
+
+# Environment
+.env
+.env.local
